@@ -1,0 +1,83 @@
+/* Mengatur tampilan dasar halaman */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #e0f2f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Kartu profil */
+.card {
+  background-color: white;
+  max-width: 350px;
+  width: 90%;
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Gambar profil responsif dan bulat */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* Judul jabatan */
+.title {
+  color: gray;
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+/* Tautan sosial */
+.social a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #00796b;
+  font-weight: bold;
+}
+
+/* Tombol */
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
+/* --------- MEDIA QUERY untuk responsif --------- */
+/* Tampilan saat layar sangat kecil (mobile < 400px) */
+@media screen and (max-width: 400px) {
+  .card {
+    padding: 15px;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .social a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  button {
+    width: 100%;
+  }
+}
