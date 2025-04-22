@@ -2,29 +2,56 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Tag viewport agar responsif -->
-  <title>Profil Frans</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Beni</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Kontainer kartu profil -->
-  <main class="card">
-    <!-- Gambar profil, menggunakan alt untuk aksesibilitas -->
-    <img src="profile01.png" alt="Foto Profil Frans" class="profile-img">
+  <header>
+    <img src="profile.png" alt="Foto Profil Beni" class="foto-profil">
+    <h1>Beni Prasetyo</h1>
+    <p>Mahasiswa Informatika | Pecinta Teknologi & Pembelajar Seumur Hidup</p>
+  </header>
 
-    <!-- Nama dan jabatan -->
-    <h1>Fransiskus</h1>
-    <p class="title">Mahasiswa Informatika</p>
-    <p>Universitas Teknologi Digital Indonesia</p>
+  <!-- Konten utama dengan Grid Layout -->
+  <main class="konten-grid">
+    <section>
+      <h2>Tentang Saya</h2>
+      <p>Saya mahasiswa semester 6 yang sedang mendalami Web Development dan pemrograman backend. Saya percaya bahwa teknologi bisa membawa dampak positif bagi masyarakat.</p>
+    </section>
 
-    <!-- Tautan sosial -->
-    <div class="social">
-      <a href="https://linkedin.com/in/fransis96">LinkedIn</a>
-      <a href="https://github.com/Fransis96">GitHub</a>
-    </div>
+    <section>
+      <h2>Riwayat Pendidikan</h2>
+      <ul>
+        <li>SDN 2 Jayapura</li>
+        <li>SMPN 2 Jayapura</li>
+        <li>SMKN 6 Jayapura</li>
+        <li>STMIK Akakom Yogyakarta</li>
+      </ul>
+    </section>
 
-    <!-- Tombol kontak -->
-    <button>Hubungi Saya</button>
+    <section>
+      <h2>Kemampuan</h2>
+      <div class="icons">
+        <img src="https://www.svgrepo.com/show/303654/java-logo.svg" alt="Java">
+        <img src="https://www.svgrepo.com/show/452091/python.svg" alt="Python">
+        <img src="https://www.svgrepo.com/show/303251/mysql-logo.svg" alt="MySQL">
+        <img src="https://www.svgrepo.com/show/354180/php.svg" alt="PHP">
+      </div>
+    </section>
+
+    <section>
+      <h2>Kontak</h2>
+      <div class="icons">
+        <img src="https://www.svgrepo.com/show/452229/instagram-1.svg" alt="Instagram">
+        <img src="https://www.svgrepo.com/show/475647/facebook-color.svg" alt="Facebook">
+        <img src="https://www.svgrepo.com/show/475654/github-color.svg" alt="GitHub">
+      </div>
+    </section>
   </main>
+
+  <footer>
+    <p>&copy; 2025 Beni Prasetyo. Dibuat untuk tugas Responsive Web Design.</p>
+  </footer>
 </body>
 </html>

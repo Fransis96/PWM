@@ -1,83 +1,99 @@
-/* Mengatur tampilan dasar halaman */
-body {
+/* Reset dasar */
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #e0f2f1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  box-sizing: border-box;
 }
 
-/* Kartu profil */
-.card {
-  background-color: white;
-  max-width: 350px;
-  width: 90%;
-  padding: 20px;
+/* Gaya umum */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f2f2f2;
+}
+
+/* Header */
+header {
   text-align: center;
-  border-radius: 20px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  padding: 2rem 1rem;
+  background-color: #0077cc;
+  color: white;
 }
 
-/* Gambar profil responsif dan bulat */
-.profile-img {
+.foto-profil {
   width: 150px;
   height: 150px;
-  border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 15px;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-bottom: 1rem;
 }
 
-/* Judul jabatan */
-.title {
-  color: gray;
-  font-size: 1em;
-  margin: 5px 0;
+/* Konten utama dengan Grid */
+.konten-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 kolom */
+  gap: 2rem;
+  padding: 2rem;
 }
 
-/* Tautan sosial */
-.social a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #00796b;
-  font-weight: bold;
-}
-
-/* Tombol */
-button {
-  margin-top: 15px;
-  padding: 10px 20px;
-  background-color: #00796b;
-  color: white;
-  border: none;
+/* Section */
+section {
+  background-color: white;
+  padding: 1.5rem;
   border-radius: 10px;
-  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-button:hover {
-  background-color: #004d40;
+/* Gaya untuk gambar ikon */
+.icons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-/* --------- MEDIA QUERY untuk responsif --------- */
-/* Tampilan saat layar sangat kecil (mobile < 400px) */
-@media screen and (max-width: 400px) {
-  .card {
-    padding: 15px;
+.icons img {
+  width: 40px;
+  height: auto;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #0077cc;
+  color: white;
+  margin-top: 2rem;
+}
+
+/* ==== RESPONSIVE DESIGN ==== */
+
+/* Ukuran tablet dan bawah: 1 kolom */
+@media screen and (max-width: 768px) {
+  .konten-grid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
   }
 
-  .profile-img {
+  header h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Ukuran HP: Ukuran font dan gambar disesuaikan */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  .foto-profil {
     width: 120px;
     height: 120px;
   }
 
-  .social a {
-    display: block;
-    margin: 5px 0;
-  }
-
-  button {
-    width: 100%;
+  .icons img {
+    width: 30px;
   }
 }
