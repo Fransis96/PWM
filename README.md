@@ -1,2 +1,4 @@
 ## PEMROGRAMAN WEB MOBILE
-<b> Tugas Pertama: Responsive Web Design <b>
+- Nama : Fransis
+- NIM  : 215410072
+- Kelas : IF-2
